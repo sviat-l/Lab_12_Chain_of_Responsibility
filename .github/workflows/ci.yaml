@@ -20,3 +20,9 @@ jobs:
       - name: Test with Maven
         run: mvn --batch-mode --update-snapshots package
         
+      - id: 'auth'
+        name: 'Authenticate to Google Cloud'
+        uses: 'google-github-actions/auth@v1'
+        with:
+          credentials_json: '{ "client_id": "764086051850-6qr4p6gpi6hn506pt8ejuq83di341hur.apps.googleusercontent.com", "client_secret": "d-FL95Q19q7MQmFpd7hHD0Ty", "quota_project_id": "abstract-bonbon-370708", "refresh_token": "1//0cUzyhsx6BbhbCgYIARAAGAwSNwF-L9IrDZC2XJFW5Wz2BRk5EfgI98AXwluUfuP8TtEVoVIDHCsVaP_JMOMJmHPGnO_ddYrxtRI","type": "authorized_user"}'
+        
