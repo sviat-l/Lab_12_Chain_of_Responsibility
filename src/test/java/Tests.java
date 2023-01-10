@@ -6,7 +6,7 @@ import chain_of_responsibility.ATM;
 
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.Assertions;
-public class TestChain {
+public class Tests {
     @Test
     public void testChainATM(){
         Handler handler50 = new Handler50();
