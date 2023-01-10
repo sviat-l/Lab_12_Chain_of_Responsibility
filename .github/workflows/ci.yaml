@@ -19,3 +19,6 @@ jobs:
           distribution: 'adopt'
       - name: Test with Maven
         run: mvn --batch-mode --update-snapshots package
+        env:
+          GOOGLE_APPLICATION_CREDENTIALS = '/application_default_credentials.json'
+        
